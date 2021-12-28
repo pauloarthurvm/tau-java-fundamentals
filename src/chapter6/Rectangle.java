@@ -2,6 +2,7 @@ package chapter6;
 
 public class Rectangle {
 
+//    ENCAPSULATION -> Having fields private and their access methods public
     private Double largeSide;
     private Double shortSide;
 
