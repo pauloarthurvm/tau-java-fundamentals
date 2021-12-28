@@ -19,15 +19,16 @@ public class Arrays {
             } while(haveNumber(randomNum, ticket));
             ticket[i] = randomNum;
         }
+        java.util.Arrays.sort(ticket);
         for (int i = 0; i < LENGTH; i++) {
             System.out.println(ticket[i]);
         }
 
     }
 
-    private static boolean haveNumber(int number, int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == number)
+    private static boolean haveNumber(int numberToSearch, int[] array) {
+        for (int value : array) {
+            if (value == numberToSearch)
                 return true;
         }
         return false;
