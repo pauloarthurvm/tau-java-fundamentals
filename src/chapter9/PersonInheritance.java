@@ -6,6 +6,11 @@ public class PersonInheritance {
     private int age;
     private String gender;
 
+    public PersonInheritance(String name) {
+        System.out.println("In Person 2nd - name - default constructor");
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
